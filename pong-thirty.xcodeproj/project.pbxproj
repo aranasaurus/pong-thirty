@@ -14,7 +14,6 @@
 		948889241B958712003B76F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948889231B958712003B76F9 /* Assets.xcassets */; };
 		948889271B958712003B76F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948889251B958712003B76F9 /* LaunchScreen.storyboard */; };
 		948889321B958712003B76F9 /* pong_30Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948889311B958712003B76F9 /* pong_30Tests.swift */; };
-		9488893D1B958C7D003B76F9 /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488893C1B958C7D003B76F9 /* Paddle.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		9488892D1B958712003B76F9 /* pong:30Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pong:30Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948889311B958712003B76F9 /* pong_30Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pong_30Tests.swift; sourceTree = "<group>"; };
 		948889331B958712003B76F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9488893C1B958C7D003B76F9 /* Paddle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paddle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 				948889231B958712003B76F9 /* Assets.xcassets */,
 				948889251B958712003B76F9 /* LaunchScreen.storyboard */,
 				948889281B958712003B76F9 /* Info.plist */,
-				9488893C1B958C7D003B76F9 /* Paddle.swift */,
 			);
 			name = "pong:30";
 			path = "pong-thirty";
@@ -204,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9488891D1B958712003B76F9 /* GameScene.swift in Sources */,
-				9488893D1B958C7D003B76F9 /* Paddle.swift in Sources */,
 				9488891F1B958712003B76F9 /* GameViewController.swift in Sources */,
 				948889191B958712003B76F9 /* AppDelegate.swift in Sources */,
 			);

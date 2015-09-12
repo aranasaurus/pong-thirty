@@ -11,11 +11,13 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 
+    var scene: GameScene?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let skView = self.view as? SKView {
-            let scene = GameScene(size: skView.bounds.size)
+            scene = GameScene(size: skView.bounds.size)
 
             // Configure the view.
             skView.showsFPS = true
@@ -25,9 +27,9 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
+            scene!.scaleMode = .AspectFill
             
-            skView.presentScene(scene)
+            skView.presentScene(scene!)
         }
     }
 
@@ -47,5 +49,19 @@ class GameViewController: UIViewController {
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first where touch.locationInView(self.view!).x < self.view!.bounds.width/2.0 {
+            guard let controller = scene?.p1.componentForClass(PlayerControlComponent.self) else { return }
+            controller.target = touch.locationInNode(scene!)
+        }
+    }
+
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first where touch.locationInView(self.view!).x < self.view!.bounds.width/2.0 {
+            guard let controller = scene?.p1.componentForClass(PlayerControlComponent.self) else { return }
+            controller.target = touch.locationInNode(scene!)
+        }
     }
 }
