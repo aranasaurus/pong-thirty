@@ -19,6 +19,8 @@ class GameViewController: UIViewController {
         if let skView = self.view as? SKView {
             scene = GameScene(size: skView.bounds.size)
 
+            skView.multipleTouchEnabled = true
+
             // Configure the view.
             skView.showsFPS = true
             skView.showsNodeCount = true
@@ -27,7 +29,7 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene!.scaleMode = .AspectFill
+            scene!.scaleMode = .ResizeFill
             
             skView.presentScene(scene!)
         }
@@ -52,15 +54,23 @@ class GameViewController: UIViewController {
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let touch = touches.first where touch.locationInView(self.view!).x < self.view!.bounds.width/2.0 {
-            guard let controller = scene?.p1.componentForClass(PlayerControlComponent.self) else { return }
-            controller.target = touch.locationInNode(scene!)
+        for touch in touches {
+            handleTouch(touch)
         }
     }
 
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let touch = touches.first where touch.locationInView(self.view!).x < self.view!.bounds.width/2.0 {
+        for touch in touches {
+            handleTouch(touch)
+        }
+    }
+
+    func handleTouch(touch: UITouch) {
+        if touch.locationInView(self.view!).x < self.view!.bounds.width/2.0 {
             guard let controller = scene?.p1.componentForClass(PlayerControlComponent.self) else { return }
+            controller.target = touch.locationInNode(scene!)
+        } else {
+            guard let controller = scene?.p2.componentForClass(PlayerControlComponent.self) else { return }
             controller.target = touch.locationInNode(scene!)
         }
     }
