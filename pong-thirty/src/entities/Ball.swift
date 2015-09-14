@@ -20,7 +20,20 @@ class Ball: GKEntity, PongEntity {
         }
     }
 
-    required init(sprite: SKSpriteNode) {
-        self.sprite = sprite
+    required init(sceneSize: CGSize) {
+        // ballSize is a square the same size as the paddle
+        let paddleSize = Player.paddleSizeForSceneSize(sceneSize)
+        let ballSize = CGSize(width: paddleSize.width, height: paddleSize.width)
+        self.sprite = SKSpriteNode(color: .whiteColor(), size: ballSize)
+        super.init()
+
+        let physicsBody = SKPhysicsBody(rectangleOfSize: ballSize)
+        physicsBody.dynamic = true
+        physicsBody.restitution = 1
+        physicsBody.friction = 0
+        physicsBody.linearDamping = 0
+        physicsBody.allowsRotation = false
+        self.sprite.physicsBody = physicsBody
     }
+
 }

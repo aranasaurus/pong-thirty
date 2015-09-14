@@ -10,6 +10,17 @@ import GameKit
 
 protocol PongEntity {
     var sprite: SKSpriteNode { get set }
+    var position: CGPoint { get }
+    mutating func setPosition(position: CGPoint)
 
-    init(sprite: SKSpriteNode)
+    init(sceneSize: CGSize)
+}
+
+extension PongEntity {
+    var position: CGPoint {
+        get { return sprite.position }
+    }
+    func setPosition(position: CGPoint) {
+        sprite.position = position
+    }
 }

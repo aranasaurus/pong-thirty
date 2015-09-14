@@ -16,7 +16,7 @@ class PlayerControlComponent: GKComponent {
         super.init()
 
         if let entity = entity as? Player {
-            target = entity.sprite.position
+            target = entity.position
         }
     }
 
@@ -39,6 +39,6 @@ class PlayerControlComponent: GKComponent {
         } else {
             velocity = max(minVel, requiredVel)
         }
-        entity.sprite.position = CGPoint(x: entity.sprite.position.x, y: entity.sprite.position.y + velocity)
+        entity.setPosition(CGPoint(x: entity.position.x, y: entity.position.y + velocity))
     }
 }
