@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 OK, Robot Studios. All rights reserved.
 //
 
-import UIKit
-import SpriteKit
+import GameKit
 
 class GameViewController: UIViewController {
 
