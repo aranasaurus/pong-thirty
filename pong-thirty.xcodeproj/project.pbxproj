@@ -7,35 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944FC2E51BA65699000DBE84 /* PongEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E41BA65699000DBE84 /* PongEntity.swift */; settings = {ASSET_TAGS = (); }; };
-		944FC2E71BA656CD000DBE84 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E61BA656CD000DBE84 /* Ball.swift */; settings = {ASSET_TAGS = (); }; };
-		944FC2E91BA65771000DBE84 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E81BA65771000DBE84 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
-		944FC2EC1BA657D3000DBE84 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2EB1BA657D3000DBE84 /* PlayerController.swift */; settings = {ASSET_TAGS = (); }; };
 		948889191B958712003B76F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948889181B958712003B76F9 /* AppDelegate.swift */; };
-		9488891D1B958712003B76F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488891C1B958712003B76F9 /* GameScene.swift */; };
 		9488891F1B958712003B76F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488891E1B958712003B76F9 /* GameViewController.swift */; };
 		948889221B958712003B76F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948889201B958712003B76F9 /* Main.storyboard */; };
 		948889241B958712003B76F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948889231B958712003B76F9 /* Assets.xcassets */; };
 		948889271B958712003B76F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948889251B958712003B76F9 /* LaunchScreen.storyboard */; };
-		948889321B958712003B76F9 /* pong_30Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948889311B958712003B76F9 /* pong_30Tests.swift */; };
+		94C0BDED1BAD20DD001C61ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0BDEC1BAD20DD001C61ED /* AppDelegate.swift */; };
+		94C0BDF31BAD20DD001C61ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0BDF21BAD20DD001C61ED /* GameViewController.swift */; };
+		94C0BDF51BAD20DD001C61ED /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C0BDF41BAD20DD001C61ED /* Game.xcassets */; };
+		94C0BDF81BAD20DD001C61ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C0BDF61BAD20DD001C61ED /* Main.storyboard */; };
+		94C0BDFA1BAD20DD001C61ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C0BDF91BAD20DD001C61ED /* Assets.xcassets */; };
+		94C0BE271BAD27BF001C61ED /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2EB1BA657D3000DBE84 /* PlayerController.swift */; };
+		94C0BE281BAD27BF001C61ED /* PongEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E41BA65699000DBE84 /* PongEntity.swift */; };
+		94C0BE291BAD27BF001C61ED /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E61BA656CD000DBE84 /* Ball.swift */; };
+		94C0BE2A1BAD27BF001C61ED /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E81BA65771000DBE84 /* Player.swift */; };
+		94C0BE2B1BAD27BF001C61ED /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488891C1B958712003B76F9 /* GameScene.swift */; };
+		94C0BE2C1BAD27C0001C61ED /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2EB1BA657D3000DBE84 /* PlayerController.swift */; };
+		94C0BE2D1BAD27C0001C61ED /* PongEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E41BA65699000DBE84 /* PongEntity.swift */; };
+		94C0BE2E1BAD27C0001C61ED /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E61BA656CD000DBE84 /* Ball.swift */; };
+		94C0BE2F1BAD27C0001C61ED /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC2E81BA65771000DBE84 /* Player.swift */; };
+		94C0BE301BAD27C0001C61ED /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488891C1B958712003B76F9 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9488892E1B958712003B76F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9488890D1B958712003B76F9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 948889141B958712003B76F9;
-			remoteInfo = "pong:30";
+/* Begin PBXCopyFilesBuildPhase section */
+		94C0BE1E1BAD218B001C61ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		944FC2E41BA65699000DBE84 /* PongEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PongEntity.swift; sourceTree = "<group>"; };
 		944FC2E61BA656CD000DBE84 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		944FC2E81BA65771000DBE84 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		944FC2EB1BA657D3000DBE84 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
-		948889151B958712003B76F9 /* pong:30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pong:30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		948889151B958712003B76F9 /* Pong:30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pong:30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948889181B958712003B76F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9488891C1B958712003B76F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9488891E1B958712003B76F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -43,9 +55,13 @@
 		948889231B958712003B76F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948889261B958712003B76F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		948889281B958712003B76F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9488892D1B958712003B76F9 /* pong:30Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pong:30Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948889311B958712003B76F9 /* pong_30Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pong_30Tests.swift; sourceTree = "<group>"; };
-		948889331B958712003B76F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C0BDEA1BAD20DD001C61ED /* Pong:30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pong:30.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C0BDEC1BAD20DD001C61ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94C0BDF21BAD20DD001C61ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		94C0BDF41BAD20DD001C61ED /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
+		94C0BDF71BAD20DD001C61ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94C0BDF91BAD20DD001C61ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94C0BDFB1BAD20DD001C61ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +72,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9488892A1B958712003B76F9 /* Frameworks */ = {
+		94C0BDE71BAD20DD001C61ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,16 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		944FC2E01BA655BB000DBE84 /* src */ = {
+		944FC2E01BA655BB000DBE84 /* shared */ = {
 			isa = PBXGroup;
 			children = (
 				944FC2EA1BA65796000DBE84 /* components */,
 				944FC2E31BA655FE000DBE84 /* entities */,
 				944FC2E11BA655CE000DBE84 /* scenes */,
-				944FC2E21BA655EC000DBE84 /* viewControllers */,
-				948889181B958712003B76F9 /* AppDelegate.swift */,
 			);
-			path = src;
+			path = shared;
 			sourceTree = "<group>";
 		};
 		944FC2E11BA655CE000DBE84 /* scenes */ = {
@@ -84,14 +98,6 @@
 				9488891C1B958712003B76F9 /* GameScene.swift */,
 			);
 			path = scenes;
-			sourceTree = "<group>";
-		};
-		944FC2E21BA655EC000DBE84 /* viewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9488891E1B958712003B76F9 /* GameViewController.swift */,
-			);
-			path = viewControllers;
 			sourceTree = "<group>";
 		};
 		944FC2E31BA655FE000DBE84 /* entities */ = {
@@ -115,8 +121,9 @@
 		9488890C1B958712003B76F9 = {
 			isa = PBXGroup;
 			children = (
-				948889171B958712003B76F9 /* pong:30 */,
-				948889301B958712003B76F9 /* pong:30Tests */,
+				948889171B958712003B76F9 /* ios */,
+				94C0BDEB1BAD20DD001C61ED /* tvos */,
+				944FC2E01BA655BB000DBE84 /* shared */,
 				948889161B958712003B76F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,71 +131,75 @@
 		948889161B958712003B76F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				948889151B958712003B76F9 /* pong:30.app */,
-				9488892D1B958712003B76F9 /* pong:30Tests.xctest */,
+				948889151B958712003B76F9 /* Pong:30.app */,
+				94C0BDEA1BAD20DD001C61ED /* Pong:30.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		948889171B958712003B76F9 /* pong:30 */ = {
+		948889171B958712003B76F9 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				944FC2E01BA655BB000DBE84 /* src */,
+				948889181B958712003B76F9 /* AppDelegate.swift */,
+				9488891E1B958712003B76F9 /* GameViewController.swift */,
 				948889231B958712003B76F9 /* Assets.xcassets */,
 				948889201B958712003B76F9 /* Main.storyboard */,
 				948889251B958712003B76F9 /* LaunchScreen.storyboard */,
 				948889281B958712003B76F9 /* Info.plist */,
 			);
-			name = "pong:30";
-			path = "pong-thirty";
+			path = ios;
 			sourceTree = "<group>";
 		};
-		948889301B958712003B76F9 /* pong:30Tests */ = {
+		94C0BDEB1BAD20DD001C61ED /* tvos */ = {
 			isa = PBXGroup;
 			children = (
-				948889311B958712003B76F9 /* pong_30Tests.swift */,
-				948889331B958712003B76F9 /* Info.plist */,
+				94C0BDEC1BAD20DD001C61ED /* AppDelegate.swift */,
+				94C0BDF21BAD20DD001C61ED /* GameViewController.swift */,
+				94C0BDF41BAD20DD001C61ED /* Game.xcassets */,
+				94C0BDF61BAD20DD001C61ED /* Main.storyboard */,
+				94C0BDF91BAD20DD001C61ED /* Assets.xcassets */,
+				94C0BDFB1BAD20DD001C61ED /* Info.plist */,
 			);
-			path = "pong:30Tests";
+			path = tvos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		948889141B958712003B76F9 /* pong:30 */ = {
+		948889141B958712003B76F9 /* pong-thirty-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948889361B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong:30" */;
+			buildConfigurationList = 948889361B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong-thirty-ios" */;
 			buildPhases = (
 				948889111B958712003B76F9 /* Sources */,
 				948889121B958712003B76F9 /* Frameworks */,
 				948889131B958712003B76F9 /* Resources */,
+				94C0BE1E1BAD218B001C61ED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "pong:30";
+			name = "pong-thirty-ios";
 			productName = "pong:30";
-			productReference = 948889151B958712003B76F9 /* pong:30.app */;
+			productReference = 948889151B958712003B76F9 /* Pong:30.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9488892C1B958712003B76F9 /* pong:30Tests */ = {
+		94C0BDE91BAD20DD001C61ED /* pong-thirty-tv */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948889391B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong:30Tests" */;
+			buildConfigurationList = 94C0BDFE1BAD20DD001C61ED /* Build configuration list for PBXNativeTarget "pong-thirty-tv" */;
 			buildPhases = (
-				948889291B958712003B76F9 /* Sources */,
-				9488892A1B958712003B76F9 /* Frameworks */,
-				9488892B1B958712003B76F9 /* Resources */,
+				94C0BDE61BAD20DD001C61ED /* Sources */,
+				94C0BDE71BAD20DD001C61ED /* Frameworks */,
+				94C0BDE81BAD20DD001C61ED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9488892F1B958712003B76F9 /* PBXTargetDependency */,
 			);
-			name = "pong:30Tests";
-			productName = "pong:30Tests";
-			productReference = 9488892D1B958712003B76F9 /* pong:30Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "pong-thirty-tv";
+			productName = "pong-thirty-tv";
+			productReference = 94C0BDEA1BAD20DD001C61ED /* Pong:30.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,9 +213,8 @@
 					948889141B958712003B76F9 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					9488892C1B958712003B76F9 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 948889141B958712003B76F9;
+					94C0BDE91BAD20DD001C61ED = {
+						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
@@ -221,8 +231,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				948889141B958712003B76F9 /* pong:30 */,
-				9488892C1B958712003B76F9 /* pong:30Tests */,
+				948889141B958712003B76F9 /* pong-thirty-ios */,
+				94C0BDE91BAD20DD001C61ED /* pong-thirty-tv */,
 			);
 		};
 /* End PBXProject section */
@@ -238,10 +248,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9488892B1B958712003B76F9 /* Resources */ = {
+		94C0BDE81BAD20DD001C61ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C0BDF81BAD20DD001C61ED /* Main.storyboard in Resources */,
+				94C0BDFA1BAD20DD001C61ED /* Assets.xcassets in Resources */,
+				94C0BDF51BAD20DD001C61ED /* Game.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,33 +265,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944FC2E51BA65699000DBE84 /* PongEntity.swift in Sources */,
-				9488891D1B958712003B76F9 /* GameScene.swift in Sources */,
-				944FC2E71BA656CD000DBE84 /* Ball.swift in Sources */,
+				94C0BE281BAD27BF001C61ED /* PongEntity.swift in Sources */,
 				9488891F1B958712003B76F9 /* GameViewController.swift in Sources */,
-				944FC2EC1BA657D3000DBE84 /* PlayerController.swift in Sources */,
-				944FC2E91BA65771000DBE84 /* Player.swift in Sources */,
+				94C0BE291BAD27BF001C61ED /* Ball.swift in Sources */,
 				948889191B958712003B76F9 /* AppDelegate.swift in Sources */,
+				94C0BE2A1BAD27BF001C61ED /* Player.swift in Sources */,
+				94C0BE2B1BAD27BF001C61ED /* GameScene.swift in Sources */,
+				94C0BE271BAD27BF001C61ED /* PlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		948889291B958712003B76F9 /* Sources */ = {
+		94C0BDE61BAD20DD001C61ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948889321B958712003B76F9 /* pong_30Tests.swift in Sources */,
+				94C0BE2D1BAD27C0001C61ED /* PongEntity.swift in Sources */,
+				94C0BDF31BAD20DD001C61ED /* GameViewController.swift in Sources */,
+				94C0BE2E1BAD27C0001C61ED /* Ball.swift in Sources */,
+				94C0BDED1BAD20DD001C61ED /* AppDelegate.swift in Sources */,
+				94C0BE2F1BAD27C0001C61ED /* Player.swift in Sources */,
+				94C0BE301BAD27C0001C61ED /* GameScene.swift in Sources */,
+				94C0BE2C1BAD27C0001C61ED /* PlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9488892F1B958712003B76F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 948889141B958712003B76F9 /* pong:30 */;
-			targetProxy = 9488892E1B958712003B76F9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		948889201B958712003B76F9 /* Main.storyboard */ = {
@@ -295,6 +306,14 @@
 				948889261B958712003B76F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94C0BDF61BAD20DD001C61ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C0BDF71BAD20DD001C61ED /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -385,10 +404,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/pong-thirty/Info.plist";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-30";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pong:30";
 			};
 			name = Debug;
 		};
@@ -396,35 +417,42 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/pong-thirty/Info.plist";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-30";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pong:30";
 			};
 			name = Release;
 		};
-		9488893A1B958712003B76F9 /* Debug */ = {
+		94C0BDFC1BAD20DD001C61ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = "pong:30Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-30Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pong:30.app/pong:30";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = tvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-thirty-tv";
+				PRODUCT_NAME = "Pong:30";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		9488893B1B958712003B76F9 /* Release */ = {
+		94C0BDFD1BAD20DD001C61ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "pong:30Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-30Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pong:30.app/pong:30";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = tvos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okrobotstudios.pong-thirty-tv";
+				PRODUCT_NAME = "Pong:30";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948889361B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong:30" */ = {
+		948889361B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong-thirty-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				948889371B958712003B76F9 /* Debug */,
@@ -449,14 +477,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948889391B958712003B76F9 /* Build configuration list for PBXNativeTarget "pong:30Tests" */ = {
+		94C0BDFE1BAD20DD001C61ED /* Build configuration list for PBXNativeTarget "pong-thirty-tv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9488893A1B958712003B76F9 /* Debug */,
-				9488893B1B958712003B76F9 /* Release */,
+				94C0BDFC1BAD20DD001C61ED /* Debug */,
+				94C0BDFD1BAD20DD001C61ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

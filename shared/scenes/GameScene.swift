@@ -12,30 +12,33 @@ class GameScene: SKScene {
     var p1: Player
     var p2: Player
     var ball: Ball
-    var prevUpdateTime: NSTimeInterval = NSDate().timeIntervalSinceReferenceDate
+
+    private var prevUpdateTime: NSTimeInterval = NSDate().timeIntervalSinceReferenceDate
     private let goalGutter = CGFloat(50)
 
-    override init(size: CGSize) {
+    init(size: CGSize, insets: UIEdgeInsets = UIEdgeInsets()) {
         self.p1 = Player(sceneSize: size)
         self.p2 = Player(sceneSize: size)
         self.ball = Ball(sceneSize: size)
         super.init(size: size)
 
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
-        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: frame.insetBy(dx: insets.left + insets.right, dy: insets.top + insets.bottom))
 
-        p1.setPosition(CGPoint(x: goalGutter, y: size.height/2.0))
+        p1.setPosition(CGPoint(x: goalGutter + insets.left + p1.sprite.size.width/2, y: size.height/2.0))
         p1.addComponent(PlayerControlComponent())
         self.addChild(p1.sprite)
 
-        p2.setPosition(CGPoint(x: size.width - goalGutter, y: size.height/2.0))
+        p2.setPosition(CGPoint(x: size.width - goalGutter - insets.right - p2.sprite.size.width/2, y: size.height/2.0))
         p2.addComponent(PlayerControlComponent())
         self.addChild(p2.sprite)
 
         ball.setPosition(CGPoint(x: size.width/2.0, y: size.height/2.0))
         addChild(ball.sprite)
         // TODO: Make it random
-        ball.sprite.physicsBody?.applyImpulse(CGVector(dx: 3, dy: 2.66))
+        let dx = size.width/5
+        let dy = size.height/5
+        ball.sprite.physicsBody?.velocity = CGVector(dx: dx, dy: dy)
     }
 
     required init?(coder aDecoder: NSCoder) {
